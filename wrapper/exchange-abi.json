@@ -1,0 +1,199 @@
+[
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "balances",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "ethAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "tokenAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "expireBlock",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "tokensIn",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "tokenOutAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "tokenInAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "liquidityProvider",
+        "type": "address"
+      }
+    ],
+    "name": "LogTokenSwap",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "liquidityProvider",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "LogLiquidityAdd",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "liquidityProvider",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "LogLiquidityGet",
+    "type": "event"
+  },
+  {
+    "constant": false,
+    "inputs": [],
+    "name": "addLiquidityIn",
+    "outputs": [],
+    "payable": true,
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [],
+    "name": "getLiquidity",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "ethAmount",
+        "type": "uint256"
+      },
+      {
+        "name": "tokenAmount",
+        "type": "uint256"
+      },
+      {
+        "name": "expireBlock",
+        "type": "uint256"
+      },
+      {
+        "name": "tokensIn",
+        "type": "uint256"
+      },
+      {
+        "name": "tokenOutAddress",
+        "type": "address"
+      },
+      {
+        "name": "tokenInAddress",
+        "type": "address"
+      },
+      {
+        "name": "liquidityProvider",
+        "type": "address"
+      },
+      {
+        "name": "signature",
+        "type": "bytes"
+      }
+    ],
+    "name": "swapForEth",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "tokensOutAmount",
+        "type": "uint256"
+      },
+      {
+        "name": "tokensInAmount",
+        "type": "uint256"
+      },
+      {
+        "name": "expireBlock",
+        "type": "uint256"
+      },
+      {
+        "name": "tokensIn",
+        "type": "uint256"
+      },
+      {
+        "name": "tokenOutAddress",
+        "type": "address"
+      },
+      {
+        "name": "tokenInAddress",
+        "type": "address"
+      },
+      {
+        "name": "liquidityProvider",
+        "type": "address"
+      },
+      {
+        "name": "signature",
+        "type": "bytes"
+      }
+    ],
+    "name": "swapForTokens",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
